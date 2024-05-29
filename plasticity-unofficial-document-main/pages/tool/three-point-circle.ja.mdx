@@ -1,0 +1,36 @@
+import VideoPlayer from '/components/VideoPlayer';
+import Reference from '/components/Reference'
+import ButtonIcon from '/components/ButtonIcon';
+import Kst from '/components/KeyboardShortcutsTitle'
+
+
+# Three-Point Circle（3点指定の円）
+
+<Reference shortcut='' command='Three-Point Circle' button='ツールバー'  buttonIcon='button-three-point-circle'/>
+
+円周上の3点を指定して円を作成できます。
+
+## 基本的な使い方
+
+1. ツールバーのボタン <ButtonIcon type="button-three-point-circle" />をクリックします。
+2. 円周上の1点をクリックします。
+3. カーソルを動かして円周上の2点目をクリックします。
+   - <Kst>キーボードショートカット</Kst>
+      - <kbd>Tab</kbd> : 寸法値に直接入力できるようになります。詳細は[こちら](/tool/sketching-essentials#specify-dimensions-numerically)を参照してください。
+      - <kbd>K</kbd> **Knife:** [ナイフモードを使う](/tool/sketching-essentials#use-knife-mode)を参照してください。
+      - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [X、Y、Z軸に拘束します](/tool/sketching-essentials#constrain-to-an-axis)。
+4. カーソルを動かして大きさを調整し、クリックして確定します。
+5. 円が作成されます。
+
+<VideoPlayer fileName="three-point-circle"/>
+
+## 関連項目
+- [Center Cirvle](center-circle)
+- [Two-Point Circle](two-point-circle)
+- [Tangent Circle](tangent-circle)
+- [Center Point Arc](center-point-arc)
+- [Three-Point Arc](three-point-arc)
+- [Tangent Arc](tangent-arc)
+
+
+

@@ -1,0 +1,32 @@
+import VideoPlayer from '/components/VideoPlayer';
+import Reference from '/components/Reference'
+import ButtonIcon from '/components/ButtonIcon';
+import Kst from '/components/KeyboardShortcutsTitle'
+
+# Tangent Circle 
+
+<Reference shortcut="" command="Tangent Circle" button="Toolbar"  buttonIcon='button-tangent-circle'/>
+
+You can create a circle tangent to two curves.
+
+## Basic Usage
+
+1. Click the <ButtonIcon type="button-tangent-circle" /> button on the toolbar.
+2. Click on the first curve that the circle will be tangent to, and then click on the second curve.
+3. Move the cursor to adjust the size of the circle.
+    - <Kst>Command Dialog</Kst>
+        - **Select first curve segment:** Click to select the first curve segment when it is highlighted.
+        - **Select second curve segment:** Click to select the second curve segment when it is highlighted.
+        - **Radius:** Specify the diameter.
+4. Click OK in the command dialog or right-click to confirm.
+5. The circle is created.
+
+<VideoPlayer fileName="tangent-circle"/>
+
+## See also
+- [Center Cirvle](center-circle)
+- [Two-Point Circle](two-point-circle)
+- [Three-Point Circle](three-point-circle)
+- [Center Point Arc](center-point-arc)
+- [Three-Point Arc](three-point-arc)
+- [Tangent Arc](tangent-arc)

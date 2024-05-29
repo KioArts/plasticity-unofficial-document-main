@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$nextra-primary-hue: 271;
+:root {
+    --nextra-primary-hue: #{$nextra-primary-hue};
+}
+
+body {
+    .nx-text-primary-600 {
+        --tw-text-opacity: 1;
+        color: hsl(
+            var(--nextra-primary-hue) var(--nextra-primary-saturation) 70% /
+                var(--tw-text-opacity)
+        );
+    }
+
+    &:lang(en),
+    &:lang(de) {
+        font-family: "Inter", "SF Pro Text", "SF Pro Icons", "Helvetica Neue",
+            "Helvetica", "Arial", sans-serif;
+        font-weight: 300 !important;
+
+        .md\:nx-w-64 {
+            width: 18rem !important;
+        }
+        hyphens: auto !important;
+        hyphenate-limit-chars: 6 3 3 !important;
+        line-height: 1.8rem !important;
+    }
+
+    &:lang(ja) {
+        font-family: "Noto Sans JP", "Hiragino Sans", "Meiryo",
+            "Hiragino Kaku Gothic ProN", sans-serif;
+        font-size: 0.9rem !important;
+
+        .nx-text-sm {
+            font-size: 0.8rem !important;
+        }
+
+        .md\:nx-w-64 {
+            width: 19rem !important;
+        }
+        line-height: 1.3rem !important;
+    }
+}
+
+
+.nx-font-bold {
+    font-weight: 900 !important;
+}
+
+.nx-font-semibold {
+    font-weight: 700 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.nx-py-1\.5 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Table */
+.nx-py-2 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+td.nx-border,
+th.nx-border {
+    border-right-width: 0 !important;
+    border-left-width: 0 !important;
+}
+
+/* Keyboard styles  */
+kbd {
+    // background-color: #8881;
+    padding: 0px 5px 0px;
+    border-radius: 0.3rem;
+    border: 1px solid #888;
+    border-bottom-width: 2px;
+    font-size: 0.9rem !important;
+    font-family: inherit !important;
+}
+
+b,
+strong {
+    font-weight: bold !important;
+}
+
+ol,
+ul {
+    margin-top: 0 !important;
+}
+
+main > ul > li {
+    list-style-type: none !important;
+}
+
+ul {
+    list-style-type: none !important;
+}
+
+h1 {
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+    line-height: 1.3em !important;
+}
+
+h2 {
+    margin-bottom: 1em !important;
+}

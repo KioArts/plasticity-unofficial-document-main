@@ -1,0 +1,29 @@
+import VideoPlayer from '/components/VideoPlayer';
+import Reference from '/components/Reference'
+import Kst from '/components/KeyboardShortcutsTitle'
+
+# Alternative Duplicate
+
+<Reference shortcut="Alt + D" command="Alternative Duplicate" button="Links von der Befehlsleiste" buttonIcon='button-alternative-duplicate' />
+
+Erstellen Sie einen Solid aus den ausgewählten Faces und manipulieren Sie dann seine Position.
+
+## Grundlegende Nutzung
+
+1. Wählen Sie das Face der Basis aus, auf dem Sie einen Solid erstellen möchten.
+2. Drücken Sie <kbd>Alt + D</kbd>, um den Befehl auszuführen.
+3. Der Solid wird erstellt. Verwenden Sie das angezeigte Move Gizmo zum Verschieben.
+4. Legen Sie die Optionen im Befehlsdialog und die Tastaturkürzel fest.
+    - <Kst>Befehlsdialog</Kst>
+        - **XYZ:** Geben Sie die Bewegungsmenge der X-, Y- und Z-Achsen an.
+
+        - <kbd>X</kbd>/<kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [Auf X-, Y- oder Z-Achse beschränken](/tool/sketching-essentials#constrain-to-an-axis).
+    - <Kst>Tastenkombinationen</Kst>
+        - <kbd>Umschalt + X</kbd>/<kbd>Umschalt + Y</kbd>/<kbd>Umschalt + Z</kbd> **X, Y, Z plane:** Auf die X-, Y- oder Z-Ebene beschränken.
+        - <kbd>G</kbd> **Screen space:** Beschränkung auf die sichtbare Ebene.
+        - <kbd>F</kbd> **Freestyle:** Klicken Sie, um den Start- und Endpunkt anzugeben, die die Richtung und Entfernung der Bewegung bestimmen.
+        - <kbd>V</kbd> **Pivot:** Klicken Sie, um die Position des Gizmo anzugeben.
+        - <kbd>W</kbd> **Worldspace:** Ändern Sie die Koordinatenachse des Gizmo zu Weltkoordinaten.
+4. Bestätigen Sie mit OK im Befehlsdialog oder Rechtsklick.
+
+<VideoPlayer fileName="alternative-duplicate"/>

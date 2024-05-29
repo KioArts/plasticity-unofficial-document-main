@@ -1,0 +1,40 @@
+{
+    "index": { 
+        "display": "hidden" 
+    },
+    "whats-new": "更新情報", 
+    "all-commands": "コマンドリスト & ショートカットキー",
+    "---1": {
+        "type": "separator",
+        "title": ""
+    },
+    "getting-started": "はじめに",
+    "plasticity-essentials": "Plasticityの基本",
+    "---2": {
+        "type": "separator",
+        "title": "ツール"
+    },
+    "tool": "スケッチ & プリミティブ ツール",
+    "---3": {
+        "type": "separator",
+        "title": "コマンド"
+    },
+    "common": "共通",
+    "sketch": "スケッチ",
+    "solid": "ソリッド",
+    "---4": {
+        "type": "separator",
+        "title": "連携"
+    },
+    "blender": "Blender",
+    "---5": {
+        "type": "separator",
+        "title": "応用"
+    },
+    "cad-essentials": "CADの基本",
+    "contact": {
+        "title": "ユーザーサポート",
+        "type": "page",
+        "href": "/getting-started/user-support"
+    }
+}

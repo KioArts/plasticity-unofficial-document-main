@@ -1,0 +1,35 @@
+import VideoPlayer from '/components/VideoPlayer';
+import Reference from '/components/Reference'
+import Kst from '/components/KeyboardShortcutsTitle'
+
+# Offset Region
+
+<Reference shortcut="O" command="Offset Region" button="Rechts der Befehlsleiste"  buttonIcon='button-offset-curve'/>
+
+Versetzen Sie die Konturlinien einer ausgewählten Region, indem Sie die Entfernung angeben, um neue Regionen zu erstellen. Mehrere Regionen erstellen neue einzelne Regionen oder eine kombinierte Region.
+
+## Grundlegende Nutzung
+
+1. Wählen Sie die Regionen aus, die Sie versetzen möchten.
+2. Drücken Sie <kbd>O</kbd>.
+3. Ziehen Sie den gelben Pfeil, um die Entfernung festzulegen.
+4. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
+   - <Kst>Befehlsdialog</Kst>
+      - **Distance:** Geben Sie die Entfernung an.
+      - **Gap fill:** 
+         - **Round:** Rundet konvexe Ecken. 
+         - **Linear:** Verbindet konvexe Ecken mit geraden Linien. 
+         - **Natural:** Natürlich    
+   - <Kst>Tastenkombinationen</Kst>
+      - <kbd>Tab</kbd> **Lock distances:** Versetzen mit gleichem Abstand auf beiden Seiten.
+      - <kbd>I</kbd> **Individual:** Wenn mehrere Regionen ausgewählt sind, versetzt das Einschalten dieser Option die Regionen in kombinierter Form.
+      - <kbd>V</kbd> **Gap fill:** 
+      - <kbd>D</kbd> **Distance:** Geben Sie die Entfernung mit der Mausbewegung an.
+5. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
+
+<VideoPlayer fileName="offset-region"/>
+
+## Siehe auch
+- [Offset Curve](offset-curve)
+- [Offset Vertex](offset-vertex)
+- [Offset Planar Curve](offset-planar-curve)

@@ -1,0 +1,36 @@
+import VideoPlayer from '/components/VideoPlayer';
+import Reference from '/components/Reference'
+import ButtonIcon from '/components/ButtonIcon';
+import Kst from '/components/KeyboardShortcutsTitle'
+
+# Center Point Arc
+
+<Reference shortcut='' command='Center Point Arc' button='ツールバー' buttonIcon='button-center-point-arc'/>
+
+中心と円周上の2点を指定して円弧を作成できます。
+
+## 基本的な使い方
+
+1. ツールバーのボタン <ButtonIcon type="button-center-point-arc" /> をクリックします。
+2. 円弧の中心でクリックします。
+3. カーソルを動かして円弧の最初の位置でクリックします。
+   - <Kst>キーボードショートカット</Kst>
+      - <kbd>Tab</kbd> : 寸法値に直接入力できるようになります。詳細は[こちら](/tool/sketching-essentials#specify-dimensions-numerically)を参照してください。
+4. カーソルを動かして円弧の大きさを調整し、クリックして確定します。
+   - <Kst>キーボードショートカット</Kst>
+      - <kbd>K</kbd> **Knife:** [ナイフモードを使う](/tool/sketching-essentials#use-knife-mode)を参照してください。
+      - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [X、Y、Z軸に拘束します](/tool/sketching-essentials#constrain-to-an-axis)。
+5. 円弧が作成されます。
+
+<VideoPlayer fileName="center-point-arc"/>
+
+## 関連項目
+- [Center Cirvle](center-circle)
+- [Two-Point Circle](two-point-circle)
+- [Three-Point Circle](three-point-circle)
+- [Tangent Circle](tangent-circle)
+- [Three-Point Arc](three-point-arc)
+- [Tangent Arc](tangent-arc)
+
+
+

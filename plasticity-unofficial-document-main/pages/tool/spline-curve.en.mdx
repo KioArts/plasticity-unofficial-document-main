@@ -1,0 +1,33 @@
+import VideoPlayer from '/components/VideoPlayer';
+import Reference from '/components/Reference'
+import ButtonIcon from '/components/ButtonIcon'
+import { Callout } from 'nextra/components'
+import Kst from '/components/KeyboardShortcutsTitle'
+
+# Spline Curve
+
+<Reference shortcut="" command="Spline Curve" button="Toolbar"  buttonIcon='button-spline-curve'/>
+
+You can create a curve by clicking points through which the curve will pass.
+
+## Basic Usage
+
+1. Click the <ButtonIcon type="button-spline-curve" /> button on the toolbar.
+2. Click to set the starting point of the curve.
+3. Click points through which the curve will pass to create the curve.
+   - <Kst>Keyboard Shortcuts</Kst>
+      - <kbd>K</kbd> **Knife:** Refer to [Using Knife Mode](/tool/sketching-essentials#use-knife-mode).
+      - <kbd>Tab</kbd> **Control / Through-point:** Switches to Control Point Curve.
+      - <kbd>Ctrl + Z</kbd> **Undo:** Cancels the last click.
+      - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [Constrains to X, Y, Z axis](/tool/sketching-essentials#constrain-to-an-axis).
+4. After clicking the last point, right-click to confirm.
+5. The curve is created.
+
+<Callout type="info" emoji="💡">
+**Difference between two types of curves**
+- Spline Curve: Click points through which the curve will pass to create it.
+- Control Point Curve: Click on the control points of the curve to create it.
+</Callout>
+
+
+

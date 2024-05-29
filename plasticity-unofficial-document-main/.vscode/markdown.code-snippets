@@ -1,0 +1,69 @@
+{
+  "Ref Solid Edit Common Opt EN": {
+    "prefix": "refer-solid-edit-common-en",
+    "body": "   - Refer to [Solid Editing Common options](common-options) for other options."
+  },
+  "Ref Solid Edit Common Opt JA": {
+    "prefix": "refer-solid-edit-common-ja",
+    "body": "   - そのほかのオプションは[ソリッド編集の共通オプション](common-options)を参照してください。"
+  },
+  "Ref Solid Edit bool Opt EN": {
+    "prefix": "refer-solid-edit-bool-en",
+    "body": "   - Refer to [Solid Editing Boolean options](boolean-options) for other options."
+  },
+  "Ref Solid Edit bool Opt JA": {
+    "prefix": "refer-solid-edit-bool-ja",
+    "body": "   - そのほかのオプションは[ブーリアンオプション](boolean-options)を参照してください。"
+  },
+  "Ref Sold Tool Common Opt EN": {
+    "prefix": "refer-solid-tool-common-en",
+    "body": "   - Refer to [Solid Tool Common options](common-options) for other options."
+  },
+  "Ref Solid Tool Common Opt JA": {
+    "prefix": "refer-solid-tool-common-ja",
+    "body": "   - そのほかのオプションは[ソリッドツールの共通オプション](common-options)を参照してください。"
+  },
+  "Ref Sketch Tool Common Opt EN": {
+    "prefix": "refer-sketch-tool-common-en",
+    "body": "   - Other options: Refer to [Sketch Tool Common options](common-options) ."
+  },
+  "Ref Sketch Tool Common Opt JA": {
+    "prefix": "refer-sketch-tool-common-ja",
+    "body": "   - そのほかのオプションは[スケッチツールの共通オプション](common-options)を参照してください。"
+  },
+  "Table-en": {
+    "prefix": "table-en",
+    "body": [
+      "   | shortcut key | Option | Note |",
+      "   | ------- | ------- | ------- |"
+    ]
+  },
+  "Confirm": {
+    "prefix": "confirm",
+    "body": "Confirm with OK in the command dialog or right-click."
+  },
+  "Unknown Function": {
+    "prefix": "unknown-function",
+    "body": " {/* ??? unknown function */}"
+  },
+  "Ctrl Key": {
+    "prefix": "key-ctrl",
+    "body": "`Ctrl`+"
+  },
+  "Alt Key": {
+    "prefix": "key-Alt",
+    "body": "`Alt`+"
+  },
+  "Shift Key": {
+    "prefix": "key-shift",
+    "body": "`Shift`+"
+  },
+
+  "Reference": {
+    "prefix": "kinou-gaiyou",
+    "body": [
+      "import Reference  from 'components/Reference';",
+      "<Reference shortcut='' command='' button='ツールバー' />"
+    ]
+  }
+}

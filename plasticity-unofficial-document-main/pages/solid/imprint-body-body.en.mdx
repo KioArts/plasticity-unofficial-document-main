@@ -1,0 +1,33 @@
+import VideoPlayer from '/components/VideoPlayer';
+import Reference from '/components/Reference'
+import Kst from '/components/KeyboardShortcutsTitle'
+
+# Imprint Body Body[#imprint-body-body]
+
+<Reference shortcut="Shift + I" command="Imprint Body Body" button="" />
+
+Create Edges on the target Solid or Sheet where it intersects with a tool Solid or Sheet. Optional Edges can also be created on the tool.
+
+## Basic Usage
+
+1. Select the first Solid or Sheet that you want to use as the target for the intersection.
+2. Select the second Solid or Sheet that you want to use as the tool for the intersection.
+3. Set the options in the Command Dialog.
+     - <Kst>Command Dialog</Kst>
+          - **Imprint tool:** Turn on **Imprint** to specify the **Complete tool** option.
+          - **Complete target:** 
+               - **None:** Does not extend the projected Edges on the target body.
+               - **Edge:** Extends the projected Edges until they intersect with other Edges on the target body.
+          - **Complete tool:**
+               - **None:** Does not extend the projected Edges on the tool body.
+               - **Edge:** Extends the projected Edges until they intersect with other Edges on the tool body.   
+4. Confirm with OK in the Command Dialog or right-click.
+
+<VideoPlayer fileName="imprint-body-body"/>
+
+## See also
+- [Imprint](imprint)
+- [Imprint Curve Body](imprint-curve-body)
+- [isoparam](isoparam)
+- [Offset Curve](offset-curve)
+- [Extend Edge](extend-edge)

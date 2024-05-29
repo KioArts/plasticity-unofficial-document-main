@@ -1,0 +1,30 @@
+import VideoPlayer from '/components/VideoPlayer';
+import Reference from '/components/Reference'
+import ButtonIcon from '/components/ButtonIcon'
+import Kst from '/components/KeyboardShortcutsTitle'
+
+# Rebuild Curve（カーブを再構築する）[#rebuild-curve]
+
+<Reference shortcut="" command="Rebuild Curve" button="コマンドバー右" buttonIcon='button-rebuild' />
+
+カーブの形状は変えずに制御点の位置を最適化することで、カーブを再構築できます。
+
+## 基本的な使い方
+
+1. 再構築したいカーブを選択します。
+2. ボタン <ButtonIcon type="button-rebuild" /> をクリックします。
+3. コマンドダイアログでオプションを設定します。
+  - <Kst>コマンドダイアログ</Kst>
+    - **Method:**
+      - **Refit:** 許容誤差の範囲内で再構築します。
+        - **Tolerance:** 許容誤差を指定します。
+        - **Keep corners:** 有効のとき、カーブのコーナーは変更されません。
+      - **# points** 指定した制御点の数で再構築します。
+        - **Points:** 制御点の数を指定します。
+4. コマンドダイアログのOKをクリックするか、右クリックで確定します。
+
+<VideoPlayer fileName="rebuild-curve"/>
+
+## See also
+- [Rebuild](rebuild)
+- [Delete Redundant Topology](delete-redundant-topology)

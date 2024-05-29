@@ -1,0 +1,35 @@
+import VideoPlayer from '/components/VideoPlayer';
+import Reference from '/components/Reference'
+import ButtonIcon from '/components/ButtonIcon'
+import Kst from '/components/KeyboardShortcutsTitle'
+
+# Draft Face
+
+<Reference shortcut="" command="Draft Face" button="Rechts von der Befehlsleiste"   buttonIcon='button-draft-face' />
+
+Wenden Sie einen Neigungswinkel auf die ausgewählte Face an.
+
+## Grundlegende Nutzung
+
+1. Wählen Sie die Face aus, die als Referenzebene verwendet werden soll.
+2. Klicken Sie auf den Button <ButtonIcon type="button-draft-face" /> rechts von der Befehlsleiste.
+3. Wählen Sie Faces aus, die geneigt werden sollen.
+4. Ziehen Sie den weißen Kreis, um den Neigungswinkel festzulegen.
+5. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
+    - <Kst>Befehlsdialog</Kst>
+        - **Degrees:** Geben Sie den Neigungswinkel an.
+        - **Grow:**
+            - Wenn die konkave innere Face geneigt wird.
+            - **Moving:** Erweitern Sie die äußere Wand, wenn die geneigte Face an die äußere Wand gelangt.
+            - **Fixed:** Stoppen Sie an der äußeren Wand.
+            - **None:** Es geht von selbst weiter, ohne die äußere Wand zu beeinflussen oder von ihr beeinflusst zu werden.
+    - <Kst>Tastenkombinationen</Kst>    
+        - <kbd>A</kbd> **Angle adjacent:** Geben Sie den Winkel durch Bewegen des Cursors an.
+6. Bestätigen Sie mit OK im Befehlsdialog oder mit einem Rechtsklick.
+
+<VideoPlayer fileName="draft-face"/>
+
+## Siehe auch
+- [Offset Face](offset-face)
+- [Match Face](match-face)
+- [Delete Face](delete-face)

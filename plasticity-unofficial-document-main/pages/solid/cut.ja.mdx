@@ -1,0 +1,31 @@
+import Reference from '/components/Reference'
+import { Callout } from 'nextra/components'
+import ButtonIcon from '/components/ButtonIcon'
+import Kst from '/components/KeyboardShortcutsTitle'
+
+# Cut（カット）
+
+<Reference shortcut="C" command="Cut" button="コマンドバー左"  buttonIcon="button-cut"/>
+
+ソリッドまたはシートをカットできます。
+
+## 基本的な使い方
+
+1. <kbd>C</kbd> を押してコマンドを実行します。
+2. ターゲットとカッターを指定します。
+   - <Kst>コマンドダイアログ</Kst>
+      - **Select target bodies:** 
+         - カット対象となるソリッドまたはシートを選択します。
+         - 対象を変更するには、**Select target bodies**をクリックしてハイライトされたら、対象を選択します。
+      - **Select cutters:** 
+         - カッターとなるカーブまたはフェイスを選択します。
+         - 対象を変更するには、**Select cutters**をクリックしてハイライトされたら、対象を選択します。
+   - <Kst>キーボードショートカット</Kst>
+      - <kbd>C</kbd> **Cut Curves:** スケッチの**Cut Curve**コマンドに切り替えます。[**Cut Curve**](/sketch/cut-curve)を参照してください。
+      - <kbd>S</kbd> **Screen space:** カット方向を見た目の方向からにします。
+3. コマンドダイアログのOKをクリックするか、右クリックで確定します。
+
+## 関連項目
+- [Boolean](boolean)
+- [Extrude](extrude)
+- [Pipe](pipe)
