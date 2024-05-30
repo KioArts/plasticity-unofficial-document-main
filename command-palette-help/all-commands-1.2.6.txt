@@ -123,6 +123,7 @@ Rebuild Curve
 Rebuild Face
 Rectangular Array
 Refillet Face
+Raise Degree
 Remove Fillets From Shell
 Remove Item
 Remove Material

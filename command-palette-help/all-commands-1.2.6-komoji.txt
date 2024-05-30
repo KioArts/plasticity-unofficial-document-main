@@ -123,6 +123,7 @@ rebuild-curve
 rebuild-face
 rectangular-array
 refillet-face
+raise-degree
 remove-fillets-from-shell
 remove-item
 remove-material
