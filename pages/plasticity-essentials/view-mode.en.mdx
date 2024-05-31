@@ -45,15 +45,18 @@ Toggle show Edges and Faces can be done by right-clicking the button (4) and cho
 
 ## Custom Matcaps
 
-1. Prepare your custom matcaps (both EXR and PNG with identical names).
+1. Prepare your custom matcaps files (both EXR and PNG files need to be with identical names).
 2. Locate the .plasticity directory on your OS (Operating System) and create a new folder "matcaps".
 
-- Windows - "X:\username\.plasticity"
-- Mac - "X:\users\username\.plasticity"
-- Linux -"X:/usr/lib/plasticity/resources/app/.webpack/main/dot-plasticity/matcaps/"
+- Windows - "X:/username/username/.plasticity"
+- Mac - "~/.plasticity"
+- Linux -"X:/usr/lib/plasticity/resources/app/.webpack/main/dot-plasticity"
 
 3. Place your custom matcaps in the folder and restart Plasticity.
+
+![Custom matcaps example](/img/custom-matcaps-example.png)
+
 <Callout type="info" emoji="💡">
 **Tip**
-    Make sure that the EXR and PNG file are in 16 bit colour range and that are both compresed in proper file resolution.
+   Ensure that both the EXR and PNG files are 512x512 pixels with a transparent background. The EXR file should also be in at least a 16-bit color range.
 </Callout>
