@@ -24,15 +24,15 @@ When Render mode is off, select the display mode by right-clicking the button (4
 - (5) Default
 - (6) Red, glossy
 - (7) Black, glossy
-- (8) White, ambient lighted
+- (8) White, ambient lighting
 - (9) Checking highlights
 - (10) Matte
-- (11) Checking silhouettes
-- (12) No shadows
-- (13) isophote/Iso Angle, checking surface continuity, static
-- (14) Draft Angle, checking draft angles for mold removal
-- (15) Checking surface continuity, horizontal
-- (16) Checking surface continuity, vertical
+- (11) Silhouette
+- (12) Flat, no shading
+- (13) isophote, static shader for checking surface continuity (orientation of shader dictated by viewport orientation at the time of activation)
+- (14) Draft Angle, for analysing draft angles in relation to draw direction (+Z axis of active workplane)
+- (15) Horizontal Zebra Stripes, for checking surface continuity
+- (16) Vertical Zebra Stripes, for checking surface continuity 
 
 ## Toggle Show Edges and Faces
 
@@ -45,12 +45,14 @@ Toggle show Edges and Faces can be done by right-clicking the button (4) and cho
 
 ## Custom Matcaps
 
-1. Prepare your custom matcaps files (both EXR and PNG files need to be with identical names).
-2. Locate the .plasticity directory on your OS (Operating System) and create a new folder "matcaps".
+1. Prepare your custom matcaps files (both EXR and PNG files need to be identically names).
+2. Locate the .plasticity directory on your OS (Operating System) and create a new folder called "matcaps".
 
-- Windows - "X:/username/username/.plasticity"
-- Mac - "~/.plasticity"
-- Linux -"X:/usr/lib/plasticity/resources/app/.webpack/main/dot-plasticity"
+The full matcaps file path for your OS should be as follows:
+
+- Windows - "C:/Users/USERNAME/.plasticity\matcaps"
+- Mac - "Macintosh HD\Users\.plasticity\matcaps"
+- Linux -"home/.plasticity/matcaps"
 
 3. Place your custom matcaps in the folder and restart Plasticity.
 
@@ -58,5 +60,5 @@ Toggle show Edges and Faces can be done by right-clicking the button (4) and cho
 
 <Callout type="info" emoji="💡">
 **Tip**
-   Ensure that both the EXR and PNG files are 512x512 pixels with a transparent background. The EXR file should also be in at least a 16-bit color range.
+   Ensure that PNG files are 512x512 pixels with a transparent background. The EXR file should be 16-bit maximum and compressed (zip compression preferred). 
 </Callout>
