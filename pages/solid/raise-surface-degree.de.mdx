@@ -1,0 +1,28 @@
+import VideoPlayer from '/components/VideoPlayer';
+import Reference from '/components/Reference'
+import Kst from '/components/KeyboardShortcutsTitle'
+import ButtonIcon from '/components/ButtonIcon'
+import { Callout } from 'nextra/components'
+
+# Raise Surface Degree
+
+<Reference shortcut="Shift + S" command="Raise Degree" button="Rechts von der Befehlsleiste" buttonIcon="button-raise-degree-curve-face"/>
+
+Zeigen Sie die Stützpunkte einer Oberfläche an und erhöhen Sie ihren Grad.
+
+## Grundlegende Verwendung
+
+1. Wählen Sie eine oder mehrere Flächen aus.
+2. Erhöhen Sie den Grad der Fläche, indem Sie <kbd> Shift + S </kbd> drücken oder auf die Schaltfläche "Grad der Kurve oder Fläche erhöhen" <ButtonIcon type="button-raise-degree-curve-face"/> rechts in der Befehlsleiste klicken.
+3. Bestätigen Sie mit OK im Befehlsdialog oder per Rechtsklick.
+
+<VideoPlayer fileName="raise-surface-degree"/>
+
+<Callout type="info" emoji="💡">
+    **Tip**
+    Verwenden Sie den Befehl 'Punkte umschalten', um die ausgewählten CVs der Flächen zu verstecken.
+<VideoPlayer fileName="raise-surface-degree-hidepoints"/>
+</Callout>
+
+## Siehe auch
+- [Raise Curve Degree](raise-curve-degree)

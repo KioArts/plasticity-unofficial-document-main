@@ -34,3 +34,23 @@ Das Umschalten der Anzeige von Kanten und Flächen kann durch Rechtsklick auf di
 | -------------------------------------------------------------------------------------------- | ----------------- | ------------ | ---------------------- |
 | Kantenanzeige umschalten<br />(Wenn dies deaktiviert ist, werden die Kanten ausgeblendet.)   |                   | (13)         | viewport: toggle Edges |
 | Flächenanzeige umschalten<br />(Wenn dies deaktiviert ist, werden die Flächen ausgeblendet.) |                   | (14)         | viewport: toggle Faces |
+
+## Benutzerdefinierte Matcaps
+
+1. Bereiten Sie Ihre benutzerdefinierten Matcap-Dateien vor (sowohl EXR- als auch PNG-Dateien müssen denselben Namen haben).
+2. Suchen Sie das .plasticity-Verzeichnis auf Ihrem Betriebssystem (Operating System) und erstellen Sie einen neuen Ordner namens "matcaps".
+
+Der vollständige Dateipfad für die Matcap-Dateien auf Ihrem Betriebssystem sollte wie folgt sein:
+
+- Windows - "C:\Users\USERNAME\ .plasticity\matcaps"
+- Mac - "Macintosh HD\Users\ .plasticity\matcaps"
+- Linux -"home/.plasticity/matcaps"
+
+3. Platzieren Sie Ihre benutzerdefinierten Matcap-Dateien in diesem Ordner und starten Sie Plasticity neu.
+
+![Custom matcaps example](/img/custom-matcaps-example.png)
+
+<Callout type="info" emoji="💡">
+**Tip**
+   Stellen Sie sicher, dass die PNG-Dateien 512x512 Pixel mit transparentem Hintergrund sind. Die EXR-Datei sollte maximal 16 Bit sein und komprimiert sein (ZIP-Kompression bevorzugt). 
+</Callout>
