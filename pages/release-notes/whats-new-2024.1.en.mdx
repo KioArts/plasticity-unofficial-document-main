@@ -1,0 +1,74 @@
+import VideoPlayer from '/components/VideoPlayer';
+
+# What's New in version 2024.1
+
+Release date: March 5, 2024
+
+## Download and Installation
+
+Plasticity 2024.1 is now available for download. Please refer to [this link](/getting-started/download-and-install) for more details.
+
+# Minor Enhancements
+
+- Improved the interactivity of the Radial Array command.
+- Enhanced accuracy of the midpoint computation for planar face polygons.
+- Export dialog now remembers the last used filename.
+- Automatically name imported image/OBJ files based on the original import filename.
+- Introduced a new orbit/rotation strategy using the classic tumble/turntable approach.
+- Extended the TangentCircle command to construct tangents to three curves/edges.
+- Added new shaders for isophotes and draft angle analysis.
+- Introduced new built-in matcaps and for advanced surfacing workflows.
+- Custom matcaps
+- New "ultra" faceting preference to enhance surface smoothness in surfacing workflows- (Use with caution!)
+- Command palette now highlights clashing keybindings in red.
+- Diagnostic error bodies are now displayed in the Loft and Sweep commands to identify issues like self-intersections.
+- PatchCommand now optionally accepts an overbuilt sheet to trim into a hole.
+- UntrimCommand has been enhanced to create holes instead of only duplicating.
+- ExtendCurve command expanded to accept curves in addition to vertices, extending in two directions simultaneously.
+- JoinSheetsCommand can be triggered with one sheet selected, and it will prompt to select the second sheet.
+- Shift-x can now temporarily disable undesirable snaps during point picking.
+- RebuildCommand expanded to replace smoothly connected edges.
+- Introduced new edge snaps (closest, perpendicular, tangent) 
+- New hover snaps for tangent circles and arcs.
+- New hover snaps where curves and edges intersect the construction plane (aka "pierces") and axes.
+- The measurements panel now displays angles between two edges-
+- Outliner's right-click menu includes a new option to create a group with selected items.
+- "Plane from selection" now allows using surface cvs to create construction planes.
+- Importing OBJ/STL files now prompts for unit confirmation.
+- Measurements in the lower-right panel can now be clicked to be copied directly to the clipboard.
+- ExtendSheetCommand introduced an "up to" behavior for extending surfaces.
+- Enhanced the STEP export dialog to include options for converting analytic surfaces to NURBS and selecting the STEP version.
+- Added a warning for unsaved changes when opening files as well as a indicator dot for unsaved changes in general.
+- Simplified the PipeCommand gizmo.
+- New obj export option: "inflexion".
+- Obj export can now optionally use the current matcap and disable the wireframe. This can be used to check ultra-high-resolution zebras, for example.
+- Dimension Command can now resize cylinders 
+
+# Major Enhancements
+
+- Offset Face (push/pull) command now supports dependent offsets.
+- Raise Degree Command increases surface complexity by converting analytic surfaces to spline and increasing the spline degree.
+- Surface CV editing now allows direct manipulation of both trimmed and untrimmed faces.
+- Faces with visible cvs now have a nominal surface to allow easier edits in the presence of direct editing. Remove Nominal SurfaceCommand is available in case it needs to be removed.
+- Introduced Toggle Points command to show/hide points on faces, curves, and bodies.
+- Added scaling options to the Pipe and Sweep commands.
+- Implemented a "Full Round" fillet option.
+- Rebuild command now can rebuild the surfaces of faces; extend/and shrink options allow for easily overbuilding surfaces.
+
+Small but Significant Changes
+
+- Dragging CVs of curves and surfaces now aligns with screen space; previously it was parallel to the construction plane
+- Enhanced sketch operations to confirm with a single enter press or single left-click.
+
+Studio-Exclusive Features
+- Integrated the xNURBS addon for high-quality surface construction.
+- Added support for Rhino 8 imports.
+
+Noteworthy Optimizations
+- Enhanced parallelism in OBJ/STL exports.
+- Object transformations (move/rotate/scale) now bypass refaceting on confirmation for efficiency.
+- Implemented 16-bit snorm normals and 16-bit indices where possible to optimize memory usage.
+
+## Download and Installation
+
+Plasticity 2024.1 is now available for download. Please refer to [this link](/getting-started/download-and-install) for more details.
