@@ -60,7 +60,7 @@ Small but Significant Changes
 - Dragging CVs of curves and surfaces now aligns with screen space; previously it was parallel to the construction plane
 - Enhanced sketch operations to confirm with a single enter press or single left-click.
 
-Studio-Exclusive Features
+# Studio-Exclusive Features
 - Integrated the xNURBS addon for high-quality surface construction.
 - Added support for Rhino 8 imports.
 
@@ -68,6 +68,73 @@ Noteworthy Optimizations
 - Enhanced parallelism in OBJ/STL exports.
 - Object transformations (move/rotate/scale) now bypass refaceting on confirmation for efficiency.
 - Implemented 16-bit snorm normals and 16-bit indices where possible to optimize memory usage.
+
+
+
+## New Features
+
+### Full Round Fillet
+
+Create a rounded fillet operation. Refer to [here](/solid/fillet-shell)
+
+### Rebuild Faces
+
+Rebuild the surfaces of faces with additional extend or shrink options for overbuilding surfaces. Refer to [here](/solid/rebuild-face)
+
+<VideoPlayer filename="rebuild-face"/>
+
+### Scalling Option for Pipe and Sweep 
+
+Scalling option integrated in the Pipe and Sweep command. Refer to [Pipe](/solid/pipe) and [Sweep](/solid/sweeop)
+
+### Dependant Offset
+
+Offset face command now supports dependent offset. Refer to [here](/solid/offset-face)
+
+<VideoPlayer fileName="dependant-offset-face"/>
+
+### Faceting Option
+
+New faceting preference option "Ultra" for high-quality surface modelling workflow.
+
+### Matcaps 
+
+New in-built matcaps for advanced surfacing workflow and custom matcaps options for users to import. Refer to [here](/solid/fillet-shell)
+
+### Radial Array
+
+Improved Radial Array command interactivity for better workflow.
+
+### Command Pallete
+
+Command Pallete now highlights in red clashing keybindings.
+
+### Diagnostic Error Bodies
+
+Diagnostic error bodies are now displayed in the Loft and Sweep commands to identify issues like self-intersections. 
+
+
+
+## Studio-Exclusive Features
+
+### xNURBS
+
+New addon for high-quality surface construction. 
+
+### Rhino 8 support
+
+Support for Rhino 8 imports. 
+
+## New Commands 
+
+### Remove Nominal Surface
+
+Remove hiden surface CVs for more control. Only applicable when you've raised surface degree. Refer to [here](/solid/remove-nominal-surface)
+
+### Toggle Points
+
+Toggle on or off CV points on faces, curves, and bodies. Refer to [here](/sketch/toggle-points)
+
 
 ## Download and Installation
 
