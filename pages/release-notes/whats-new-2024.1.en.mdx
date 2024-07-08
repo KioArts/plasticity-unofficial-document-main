@@ -8,110 +8,141 @@ Release date: March 5, 2024
 
 Plasticity 2024.1 is now available for download. Please refer to [this link](/getting-started/download-and-install) for more details.
 
-# Minor Enhancements
+## Minor Improvement
 
-- Improved the interactivity of the Radial Array command.
-- Enhanced accuracy of the midpoint computation for planar face polygons.
-- Export dialog now remembers the last used filename.
-- Automatically name imported image/OBJ files based on the original import filename.
-- Introduced a new orbit/rotation strategy using the classic tumble/turntable approach.
-- Extended the TangentCircle command to construct tangents to three curves/edges.
-- Added new shaders for isophotes and draft angle analysis.
-- Introduced new built-in matcaps and for advanced surfacing workflows.
-- Custom matcaps
-- New "ultra" faceting preference to enhance surface smoothness in surfacing workflows- (Use with caution!)
-- Command palette now highlights clashing keybindings in red.
-- Diagnostic error bodies are now displayed in the Loft and Sweep commands to identify issues like self-intersections.
-- PatchCommand now optionally accepts an overbuilt sheet to trim into a hole.
-- UntrimCommand has been enhanced to create holes instead of only duplicating.
-- ExtendCurve command expanded to accept curves in addition to vertices, extending in two directions simultaneously.
-- JoinSheetsCommand can be triggered with one sheet selected, and it will prompt to select the second sheet.
-- Shift-x can now temporarily disable undesirable snaps during point picking.
-- RebuildCommand expanded to replace smoothly connected edges.
-- Introduced new edge snaps (closest, perpendicular, tangent) 
-- New hover snaps for tangent circles and arcs.
-- New hover snaps where curves and edges intersect the construction plane (aka "pierces") and axes.
-- The measurements panel now displays angles between two edges-
-- Outliner's right-click menu includes a new option to create a group with selected items.
-- "Plane from selection" now allows using surface cvs to create construction planes.
-- Importing OBJ/STL files now prompts for unit confirmation.
-- Measurements in the lower-right panel can now be clicked to be copied directly to the clipboard.
-- ExtendSheetCommand introduced an "up to" behavior for extending surfaces.
-- Enhanced the STEP export dialog to include options for converting analytic surfaces to NURBS and selecting the STEP version.
-- Added a warning for unsaved changes when opening files as well as a indicator dot for unsaved changes in general.
-- Simplified the PipeCommand gizmo.
-- New obj export option: "inflexion".
-- Obj export can now optionally use the current matcap and disable the wireframe. This can be used to check ultra-high-resolution zebras, for example.
-- Dimension Command can now resize cylinders 
+### Radial Array 
 
-# Major Enhancements
+Improved interactivity of the Radial Array command.
 
-- Offset Face (push/pull) command now supports dependent offsets.
-- Raise Degree Command increases surface complexity by converting analytic surfaces to spline and increasing the spline degree.
-- Surface CV editing now allows direct manipulation of both trimmed and untrimmed faces.
-- Faces with visible cvs now have a nominal surface to allow easier edits in the presence of direct editing. Remove Nominal SurfaceCommand is available in case it needs to be removed.
-- Introduced Toggle Points command to show/hide points on faces, curves, and bodies.
-- Added scaling options to the Pipe and Sweep commands.
-- Implemented a "Full Round" fillet option.
-- Rebuild command now can rebuild the surfaces of faces; extend/and shrink options allow for easily overbuilding surfaces.
+### Planar Face Polygons
 
-Small but Significant Changes
+Enhanced accuracy of the midpoint computation for planar face polygons.
 
-- Dragging CVs of curves and surfaces now aligns with screen space; previously it was parallel to the construction plane
-- Enhanced sketch operations to confirm with a single enter press or single left-click.
+### Export Dialog
 
-# Studio-Exclusive Features
-- Integrated the xNURBS addon for high-quality surface construction.
-- Added support for Rhino 8 imports.
+Export dialog now remembers the last used filename.
 
-Noteworthy Optimizations
-- Enhanced parallelism in OBJ/STL exports.
-- Object transformations (move/rotate/scale) now bypass refaceting on confirmation for efficiency.
-- Implemented 16-bit snorm normals and 16-bit indices where possible to optimize memory usage.
+### Image/OBJ Import
 
+Automatically name imported image/OBJ files based on the original import filename.
 
+### Tangent Circle Command
 
-## New Features
+Extended the Tangent Circle command to construct tangents to three curves/edges.
+
+### New shaders and Built-In Matcaps
+
+Added new shaders for isophotes and draft angle analysis and new built-in matcaps for advanced surfacing workflows, including the option to inset custom matcaps.
+
+### Patch Command 
+
+Patch Command now optionally accepts an overbuilt sheet to trim into a hole.
+
+### Untrim
+
+Untrim Command has been enhanced to create holes instead of only duplicating.
+
+### Extend Curve
+
+Extend Curve command expanded to accept curves in addition to vertices, extending in two directions simultaneously.
+
+### Join Sheet
+
+Join Sheets Command can be triggered with one sheet selected, and it will prompt to select the second sheet.
+
+### Point Picking Enhancement
+
+Shift-x can now temporarily disable undesirable snaps during point picking.
+
+### Rebuild
+
+Rebuild Command expanded to replace smoothly connected edges.
+
+### Snapping Features
+
+Introduced new edge snaps (closest, perpendicular, tangent), new hover snaps for tangent circles and arcs and new hover snaps where curves and edges intersect the construction plane (also known as "pierces") and axes.
+
+### Measurement Panel
+
+The measurements panel now displays angles between two edges
+
+### Outliner
+
+Outliner's right-click menu includes a new option to create a group with selected items.
+
+### Construction Plane
+
+"Plane from selection" now allows using surface cvs to create construction planes.
+
+### OBJ/STL Unit Confirmation
+
+ Importing OBJ/STL files now prompts for unit confirmation.
+
+### Improved Panel Interactivity
+
+ Measurements in the lower-right panel can now be clicked to be copied directly to the clipboard.
+
+### Extend Sheet
+
+ Extend Sheet Command introduced an "up to" behavior for extending surfaces.
+
+### 
+
+ Enhanced the STEP export dialog to include options for converting analytic surfaces to NURBS and selecting the STEP version.
+
+###
+
+ Added a warning for unsaved changes when opening files as well as a indicator dot for unsaved changes in general.
+
+###
+
+ Simplified the PipeCommand gizmo.
+
+###
+
+ New obj export option: "inflexion".
+
+###
+
+ Obj export can now optionally use the current matcap and disable the wireframe. This can be used to check ultra-high-resolution zebras, for example.
+
+###
+
+ Dimension Command can now resize cylinders 
+
+## Major Improvement
+
+### Dependent Offset 
+
+Offset Face (push/pull) command now supports dependent offsets.
+
+### Raise Surface Degree
+
+Raise Degree Command increases surface complexity by converting analytic surfaces to spline and increasing the spline degree.
+
+### Surface CV Editing
+
+Surface CV editing now allows direct manipulation of both trimmed and untrimmed faces.
+
+### Nominal Face
+
+Faces with visible cvs now have a nominal surface to allow easier edits in the presence of direct editing. Remove Nominal SurfaceCommand is available in case it needs to be removed.
+
+### Toggle Points
+
+Introduced Toggle Points command to show/hide points on faces, curves, and bodies.
+
+### Pipe and Sweep
+
+Added scaling options to the Pipe and Sweep commands.
 
 ### Full Round Fillet
 
-Create a rounded fillet operation. Refer to [here](/solid/fillet-shell)
+Implemented a "Full Round" fillet option.
 
-### Rebuild Faces
+### Face Rebuild
 
-Rebuild the surfaces of faces with additional extend or shrink options for overbuilding surfaces. Refer to [here](/solid/rebuild-face)
-
-<VideoPlayer filename="rebuild-face"/>
-
-### Scalling Option for Pipe and Sweep 
-
-Scalling option integrated in the Pipe and Sweep command. Refer to [Pipe](/solid/pipe) and [Sweep](/solid/sweeop)
-
-### Dependant Offset
-
-Offset face command now supports dependent offset. Refer to [here](/solid/offset-face)
-
-<VideoPlayer fileName="dependant-offset-face"/>
-
-### Faceting Option
-
-New faceting preference option "Ultra" for high-quality surface modelling workflow.
-
-### Matcaps 
-
-New in-built matcaps for advanced surfacing workflow and custom matcaps options for users to import. Refer to [here](/solid/fillet-shell)
-
-### Radial Array
-
-Improved Radial Array command interactivity for better workflow.
-
-### Command Pallete
-
-Command Pallete now highlights in red clashing keybindings.
-
-### Diagnostic Error Bodies
-
-Diagnostic error bodies are now displayed in the Loft and Sweep commands to identify issues like self-intersections. 
+Rebuild command now can rebuild the surfaces of faces; extend/and shrink options allow for easily overbuilding surfaces.
 
 
 
@@ -119,11 +150,20 @@ Diagnostic error bodies are now displayed in the Loft and Sweep commands to iden
 
 ### xNURBS
 
-New addon for high-quality surface construction. 
+Integrated the xNURBS addon for high-quality surface construction.
 
-### Rhino 8 support
+### Rhino 8 Import
 
-Support for Rhino 8 imports. 
+ Added support for Rhino 8 imports.
+
+## Noteworthy Optimizations
+
+Enhanced parallelism in OBJ/STL exports.
+
+Object transformations (move/rotate/scale) now bypass refaceting on confirmation for efficiency.
+
+Implemented 16-bit snorm normals and 16-bit indices where possible to optimize memory usage.
+
 
 ## New Commands 
 
@@ -134,6 +174,12 @@ Remove hiden surface CVs for more control. Only applicable when you've raised su
 ### Toggle Points
 
 Toggle on or off CV points on faces, curves, and bodies. Refer to [here](/sketch/toggle-points)
+
+### Rebuild Face
+
+### Raise Degree on Curves and Faces
+
+
 
 
 ## Download and Installation
