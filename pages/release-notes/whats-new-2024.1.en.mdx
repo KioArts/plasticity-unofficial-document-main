@@ -14,6 +14,8 @@ Plasticity 2024.1 is now available for download. Please refer to [this link](/ge
 
 Improved interactivity of the Radial Array command.
 
+<VideoPlayer fileName="radial-array-interaction-update-preview"/>
+
 ### Planar Face Polygons
 
 Enhanced accuracy of the midpoint computation for planar face polygons.
@@ -32,7 +34,7 @@ Extended the Tangent Circle command to construct tangents to three curves/edges.
 
 ### New shaders and Built-In Matcaps
 
-Added new shaders for isophotes and draft angle analysis and new built-in matcaps for advanced surfacing workflows, including the option to inset custom matcaps.
+Added new shaders for isophotes and draft angle analysis and new built-in matcaps for advanced surfacing workflows, including the option to insert custom matcaps. 
 
 ### Patch Command 
 
@@ -56,7 +58,7 @@ Shift-x can now temporarily disable undesirable snaps during point picking.
 
 ### Rebuild
 
-Rebuild Command expanded to replace smoothly connected edges.
+Rebuild Command expanded to replace smoothly connected edges. 
 
 ### Snapping Features
 
@@ -86,39 +88,49 @@ Outliner's right-click menu includes a new option to create a group with selecte
 
  Extend Sheet Command introduced an "up to" behavior for extending surfaces.
 
-### 
+###  STEP Export Enhacement
 
  Enhanced the STEP export dialog to include options for converting analytic surfaces to NURBS and selecting the STEP version.
 
-###
+### Warning Indicator for Unsaved Files
 
  Added a warning for unsaved changes when opening files as well as a indicator dot for unsaved changes in general.
 
-###
+### Command Palette
 
- Simplified the PipeCommand gizmo.
+ Command Palette now highlights in red clashing keybindings.
 
-###
+### Pipe Gizmo
+
+ Simplified the Pipe Command gizmo.
+
+### New OBJ Export Option
 
  New obj export option: "inflexion".
 
-###
+### OBJ Export Wireframe and Shader
 
  Obj export can now optionally use the current matcap and disable the wireframe. This can be used to check ultra-high-resolution zebras, for example.
 
-###
+### Dimension Command Enhancement
 
- Dimension Command can now resize cylinders 
+ Dimension Command can now resize cylinders. 
+
+
 
 ## Major Improvement
 
 ### Dependent Offset 
 
-Offset Face (push/pull) command now supports dependent offsets.
+Offset Face (push/pull) command now supports dependent offsets. Refer to [here](/solid/offset-face).
+
+<VideoPlayer fileName="dependant-offset-face"/>
 
 ### Raise Surface Degree
 
-Raise Degree Command increases surface complexity by converting analytic surfaces to spline and increasing the spline degree.
+Raise Degree Command increases surface complexity by converting analytic surfaces to spline and increasing the spline degree. Refer to [here](/solid/raise-surface-degree).
+
+<VideoPlayer fileName="raise-surface-degree"/>
 
 ### Surface CV Editing
 
@@ -126,24 +138,33 @@ Surface CV editing now allows direct manipulation of both trimmed and untrimmed 
 
 ### Nominal Face
 
-Faces with visible cvs now have a nominal surface to allow easier edits in the presence of direct editing. Remove Nominal SurfaceCommand is available in case it needs to be removed.
+Faces with visible cvs now have a nominal surface to allow easier edits in the presence of direct editing. Remove Nominal Surface Command is available in case it needs to be removed. Refer to [here](/solid/remove-nominal-surface).
+
+<VideoPlayer filename="remove-nominal-surface"/>
 
 ### Toggle Points
 
-Introduced Toggle Points command to show/hide points on faces, curves, and bodies.
+Introduced Toggle Points command to show/hide points on faces, curves, and bodies. Refer to [here](/curve/toggle-points).
+
+<VideoPlayer fileName="toggle-points"/> 
 
 ### Pipe and Sweep
 
-Added scaling options to the Pipe and Sweep commands.
+Added scaling options to the Pipe and Sweep commands. Refer to [Pipe](/solid/pipe) and [Sweep](/solid/sweeop) for more details.
 
 ### Full Round Fillet
 
-Implemented a "Full Round" fillet option.
+Implemented a "Full Round" fillet option. 
+
+The Full Round option has been added to the solid fillet feature. This option gives you the option to create a rounded fillet on a face when two edges are selected.
+
+For more details on Fillet Shell, see [here](/solid/fillet-shell#fillet-options).
 
 ### Face Rebuild
 
 Rebuild command now can rebuild the surfaces of faces; extend/and shrink options allow for easily overbuilding surfaces.
 
+<VideoPlayer fileName="rebuild-face"/>
 
 
 ## Studio-Exclusive Features
@@ -177,8 +198,9 @@ Toggle on or off CV points on faces, curves, and bodies. Refer to [here](/sketch
 
 ### Rebuild Face
 
-### Raise Degree on Curves and Faces
+Rebuild a face 
 
+### Raise Degree on Curves and Faces
 
 
 
