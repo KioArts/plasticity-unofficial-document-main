@@ -18,16 +18,16 @@ Improved interactivity of the Radial Array command, allowing you to directly see
 
 ### Export Dialog
 
-The export dialog now has an improved functionality where it retains the last used filename. This means that when you export a file, the software will automatically suggest the name you previously used, streamlining the process and saving you time. This feature is particularly useful for those who frequently export files with similar or iterative names, as it reduces the need to re-enter the filename each time. This enhancement not only increases efficiency but also minimizes the risk of errors from manually typing filenames repeatedly
+The export dialog now has an improved functionality where it retains the last used filename. This means that when you export a file, Plasticity will automatically suggest the name you previously used, streamlining the process and saving you time.
 
 ### Image/OBJ Import
 
-Introducing a feature that automatically names imported image and OBJ files based on their original import filename. This means that when you import a file, the software will use the existing filename as the default name within the application. This feature ensures consistency and makes it easier to organize and locate your files, as their names remain unchanged from their source. This automatic naming helps maintain a clear and organized workflow, especially when dealing with multiple files, as it eliminates the need to manually rename each file after import.
+Introducing a feature that automatically names imported image and OBJ files based on their original import filename. This means that when you import a file, Plasticity will use the existing filename as the default name within the application.
 
 ### Tangent Circle Command
 
-Extended the Tangent Circle command to construct tangents to three curves/edges. Refer to [here](/tool/tangent-circle).
-The Tangent Circle command now supports constructing tangents to three curves or edges. This enhancement allows users to create a circle that is tangent to three different curves or edges at once, improving versatility and precision in complex designs. Refer to [here](/tool/tangent-circle).
+The Tangent Circle command now supports constructing tangents to three curves or edges. This enhancement allows users to create a circle that is tangent to three different curves or edges at once, improving versatility and precision in complex designs. For more information click [here](/tool/tangent-circle).
+
 ### New shaders and Built-In Matcaps
 
 Added new shaders for isophotes and draft angle analysis and new built-in matcaps for advanced surfacing workflows, including the option to insert custom matcaps. Refer to [here](/plasticity-essential/view-mode).
@@ -100,13 +100,13 @@ The Outliner's right-click menu now includes an option to create a group with se
 
 ### Construction Plane  
 
-**"Plane from selection"** now allows using surface CVs to create construction planes. For more information about construction planes click [here](/plasticity-essential/construction-plane).
+"Plane from selection" now allows using surface CVs to create construction planes. For more information about construction planes click [here](/plasticity-essential/construction-plane).
 
 <VideoPlayer fileName="construction-plane-example"/>
 
 ### OBJ/STL Unit Confirmation
 
- Importing OBJ/STL files now prompts for unit confirmation.
+ Importing OBJ/STL files now prompts for unit confirmation. 
 
 ### Improved Panel Interactivity
 
@@ -128,27 +128,37 @@ The Outliner's right-click menu now includes an option to create a group with se
 
  ![Keybind conflict highlighter](/img/keybind-conflict-highlight.png)
 
-### Pipe Gizmo
+### Simplified Pipe Gizmo
 
- New simplified gizmo for the Pipe command.
+ The Gizmo for the Pipe Command has been simplified, making it now easy to use and work with. Refer to the example below.  
 
  ![Pipe Gizmo](/img/pipe-gizmo-example.png)
 
-### New OBJ Export Option X
+### New OBJ Export Option: "Inflexion"
 
- New obj export option: "inflexion".
+The "Inflexion" option inserts additional line cuts on surface areas, particularly noticeable on curvatures. This increases topology resolution for higher quality rendering when exported to other 3D packacges. However, you now have the option to disable it for a more evenly distributed topology control overall.
 
-### OBJ Export Wireframe and Shader X
+![Inflexion OBJ Option](/img/obj-export-example-1.png)
 
- Obj export can now optionally use the current matcap and disable the wireframe. This can be used to check ultra-high-resolution zebras, for example.
+### OBJ Export Feature: Matcap and Wireframe Options
 
-### Dimension Command Enhancement X
+OBJ export can now optionally use the current matcap and disable the wireframe during inspection. This feature is useful for checking surface quality or optimization with high-resolution zebra or other shaders. 
 
- Dimension Command can now resize cylinders. 
+ <VideoPlayer fileName="obj-export-example-2"/>
 
-### Rebuild X
+### Dimension Command Enhancement
 
-Rebuild Command expanded to replace smoothly connected edges. 
+ Resizing cylinders with the Dimension Command is now possible. For more information on the Dimension Command, click [here](/common/dimension).
+
+ <VideoPlayer fileName="dimension-command-example"/>
+
+### Rebuild Edge
+
+Rebuild Command expanded to replace smoothly connected edges.
+
+Rebuild Command can now rebuild broken edges on a surface
+
+<VideoPlayer fileName="rebuild-edge"/> 
 
 ### Planar Face Polygons -x- ---
 
