@@ -1,4 +1,6 @@
 import VideoPlayer from '/components/VideoPlayer';
+import Kst from '/components/KeyboardShortcutsTitle'
+import Reference from '/components/Reference'
 
 # What's New in version 2024.1
 
@@ -60,11 +62,11 @@ Join Sheets Command can be triggered with one sheet selected, and it will prompt
 
 Introducing a new behavior for the Extend Sheet Command which will extend a sheet up to and intersecting a target body. For more information on Extend Sheet, click [here](/solid/extend-sheet).
 
-<VideoPlayer fileName="dependant-extend-sheet"/> 
+<VideoPlayer fileName="extend-sheet-example"/> 
 
 ### Point Picking Enhancement 
 
-When pressing Shift+X, you can now temporarily disable undesirable snaps during point picking on a curve, edge, and solid. This allows you to snap on specific points without slowing you down.
+When pressing <kbd>Shift+X</kbd>, you can now temporarily disable undesirable snaps during point picking on a curve, edge, and solid. This allows you to snap on specific points without slowing you down.
 
 <VideoPlayer fileName="point-picking-enhancement-example"/>
 
@@ -74,7 +76,9 @@ Introduced new edge snaps "closest, perpendicular, and tangent" allowing for mor
 
 <VideoPlayer fileName="snapping-features-example"/>
 
-Additionally, new hover snaps are introduced where curves and edges intersect or pierce the construction plane and axes. 
+![Edge snapping example](/img/new-edge-snapping.png)
+
+Additionally, new hover snaps are introduced where curves and edges intersect or pierce the construction plane and axes. For more information on construction planes, click [here](/plasticity-essential/construction-plane).
 
 <VideoPlayer fileName="construction-plane-intersection-curve-edges-example"/>
 
@@ -154,15 +158,13 @@ OBJ export can now optionally use the current matcap and disable the wireframe d
 
 ### Rebuild Edge
 
-Rebuild Command expanded to replace smoothly connected edges.
-
-Rebuild Command can now rebuild broken edges on a surface
+The Rebuild Command has expanded to now rebuild broken edges on a surface. This is useful when manually deleting the edges with <kbd>Shift+X</kbd> and Delete Redundant Topology Command don't work. For more information on Rebuild Command, click [here](/sketch/rebuild).
 
 <VideoPlayer fileName="rebuild-edge"/> 
 
-### Planar Face Polygons -x- ---
+### Planar Face Polygons
 
-Enhanced accuracy of the midpoint computation for planar face polygons.
+Enhanced accuracy of the midpoint computation for planar face polygons. For more information on Regular Polygon Tool, click here [here](/tool/polygon)
 
 
 ## Major Improvement
@@ -185,7 +187,7 @@ Surface CV editing now allows direct manipulation of both trimmed and untrimmed 
 
 ### Nominal Face
 
-Faces with visible cvs now have a nominal surface to allow easier edits in the presence of direct editing. Remove Nominal Surface Command is available in case it needs to be removed. Refer to [here](/solid/remove-nominal-surface).
+Faces with visible CVs now have a nominal surface to allow easier edits in the presence of direct editing. Remove Nominal Surface Command is available in case it needs to be removed. Refer to [here](/solid/remove-nominal-surface).
 
 <VideoPlayer filename="remove-nominal-surface"/>
 
@@ -201,15 +203,11 @@ Added scaling options to the Pipe and Sweep commands. Refer to [Pipe](/solid/pip
 
 ### Full Round Fillet
 
-Implemented a "Full Round" fillet option. 
-
-The Full Round option has been added to the solid fillet feature. This option gives you the option to create a rounded fillet on a face when two edges are selected.
-
-For more details on Fillet Shell, see [here](/solid/fillet-shell#fillet-options).
+The Full Round option has been added to the solid fillet feature. This option gives you the option to create a rounded fillet on a face when two edges are selected. For more details on Fillet Shell, see [here](/solid/fillet-shell#fillet-options).
 
 ### Face Rebuild
 
-Rebuild command now can rebuild the surfaces of faces; extend/and shrink options allow for easily overbuilding surfaces.
+Rebuild command now can rebuild the surfaces of faces; extend/and shrink options allow for easily overbuilding surfaces. Refer to [here](/solid/rebuild-face). 
 
 <VideoPlayer fileName="rebuild-face"/>
 
@@ -217,8 +215,6 @@ Rebuild command now can rebuild the surfaces of faces; extend/and shrink options
 ## Studio-Exclusive Features
 
 ### xNURBS
-
-Integrated the xNURBS addon for high-quality surface construction.
 
 The software now integrates the xNURBS addon, enabling high-quality surface construction. This powerful tool enhances the capability to create smooth, complex surfaces with precision, significantly improving the overall design process with ease. For more information on xNURBS click [here](/solid/xnurbs).
 
@@ -247,7 +243,7 @@ Remove hiden surface CVs for more control. Only applicable when you've raised su
 
 Toggle on or off CV points on faces, curves, and bodies. Refer to [here](/sketch/toggle-points)
 
-### Rebuild Face
+### Rebuild Face Edge
 
 Rebuild a face 
 
