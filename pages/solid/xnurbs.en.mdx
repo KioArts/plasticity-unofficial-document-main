@@ -4,7 +4,7 @@ import Kst from '/components/KeyboardShortcutsTitle'
 import ButtonIcon from '/components/ButtonIcon'
 
 
-# xNURBS
+# XNurbs
 
 <Reference shortcut="" command="xNURBS" buttonIcon="-"/>
 
@@ -13,23 +13,23 @@ Create smooth and complex surfaces.
 ## Basic Usage
 
 1. Select two or more edges you want to frame the surface.
-2. Use the **xNURBS** command in the Command Palette.
+2. Use the **XNurbs** command in the Command Palette.
 3. Set the options in the Command Dialog.
     - <Kst>Command Dialog</Kst>
-          - **Continuity:** 
-          - **Quad sided:** 
-          - **Flatness:** 
+          - **Continuity:** **G0, G1, G2**
+          - **Quad sided:** Generate untrimmed quad-sided spline surface on a surface area with 4 edges. This only works with 4 boundary edges on a surface area.
+          - **Flatness:** Specify the value of flatness on the generated surface. Higher value will result in higher surface quality and lower value will result it lower surface quality. This will affect on reflective lines if checked with the zebra shader. 
           - **Boundary:** 
                 - **Natural** - 
                 - **Normal** - 
-          - **Quality:**
-                - **Auto**
-                - **High**
-                - **Max**
-          - **Tolerance:**
+          - **Quality:** - Determine the quality of the generated surface. 
+                - **Auto** - Automatic generation based on surface input. Recommended.
+                - **High** - Higher surface quality which will increase surface additions.
+                - **Max** - Highest furface quality option, resulting in more surface additions.
+          - **Tolerance:** - Specify the tolerance for the generated surface.
 5. Confirm with OK in the Command Dialog or right-click.
 
-<VideoPlayer fileName="rebuild-face"/>
+<VideoPlayer fileName="xnurbs-0"/>
 
 ## See also
 - [Rebuild](rebuild)
