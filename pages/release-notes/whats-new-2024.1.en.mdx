@@ -16,6 +16,10 @@ Plasticity 2024.1 is now available for download. Please refer to [this link](/ge
 
 Improved interactivity of the Radial Array command, allowing you to directly see live interactivity on the viewport and improving your consistency of work. For more information on Radial Array, click [here](/common/radial-array).
 
+### Planar Face Polygons
+
+Enhanced accuracy of the midpoint computation for planar face polygons. For more information on Regular Polygon Tool, click here [here](/tool/polygon)
+
 ### Export Dialog
 
 The export dialog now has an improved functionality where it retains the last used filename. This means that when you export a file, Plasticity will automatically suggest the name you previously used, streamlining the process and saving you time.
@@ -23,6 +27,10 @@ The export dialog now has an improved functionality where it retains the last us
 ### Image/OBJ Import
 
 Introducing a feature that automatically names imported image and OBJ files based on their original import filename. This means that when you import a file, Plasticity will use the existing filename as the default name within the application.
+
+### New Orbit/Rotation 
+
+Introduced a new orbit and rotation strategy using the classic tumble/turntable approach.
 
 ### Tangent Circle Command
 
@@ -35,6 +43,22 @@ The Tangent Circle command now supports constructing tangents to three curves or
 Added new shaders for isophotes and draft angle analysis and new built-in matcaps for advanced surfacing workflows, including the option to insert custom matcaps. Refer to [here](/plasticity-essential/view-mode).
 
 ![Matcaps and Shaders](/img/custom-matcaps-example.png)
+
+### New Faceting Preference - "Ultra"
+
+New faceting preference "Ultra" has been introduced to enhance surface smoothness in surfacing workflows. It is recommended to use this when working on small documents, for example, a car body. It is CPU and GPU resource intense.
+
+### Command Palette
+
+The Command Palette now highlights clashing keybindings in red. This feature makes it easier to identify and resolve conflicts, ensuring smoother workflow and improved usability.
+
+![Keybind conflict highlighter](/img/keybind-conflict-highlight.png)
+
+### Diagnostic Error Bodies in Loft and Sweep Commands
+
+Diagnostic error bodies are now displayed in the Loft and Sweep commands to identify issues such as self-intersections.
+
+![Self-Intersections](/img/self-intersections-loft-sweep.png)
 
 ### Patch Command 
 
@@ -134,11 +158,6 @@ The Outliner's right-click menu now includes an option to create a group with se
 
  ![Warning indicator](/img/warning-indicator.png)
  
-### Command Palette
-
- The Command Palette now highlights clashing keybindings in red. This feature makes it easier to identify and resolve conflicts, ensuring smoother workflow and improved usability.
-
- ![Keybind conflict highlighter](/img/keybind-conflict-highlight.png)
 
 ### Simplified Pipe Gizmo
 
@@ -170,9 +189,6 @@ The Rebuild Command has expanded to now rebuild broken edges on a surface. This 
 
 <VideoPlayer fileName="rebuild-edge"/> 
 
-### Planar Face Polygons
-
-Enhanced accuracy of the midpoint computation for planar face polygons. For more information on Regular Polygon Tool, click here [here](/tool/polygon)
 
 
 ## Major Improvement
