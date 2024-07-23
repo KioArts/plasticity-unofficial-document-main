@@ -1,0 +1,25 @@
+import VideoPlayer from '/components/VideoPlayer';
+import Reference from '/components/Reference'
+import Kst from '/components/KeyboardShortcutsTitle'
+import ButtonIcon from '/components/ButtonIcon'
+
+# Rebuild Edge
+
+<Reference shortcut="" command="Rebuild" button="-"/>
+
+「壊れたエッジの断片を1つのクリーンなエッジに再構築します。」
+
+## 基本的な使い方
+
+1. 「再構築したいエッジを選択してください。」
+2. 「コマンドパレットで **Rebuild** コマンドを使用します。」
+3. 「コマンドダイアログでオプションを設定します。」
+    - <Kst>Command Dialog</Kst>
+          - **Tolerance:** 「エッジのCV数の許容範囲を指定します。値が低いほどCVの数が多くなり、高いほどCVの数が少なくなります。これは確認後のエッジの品質を決定します。」
+5. 「コマンドダイアログで「OK」をクリックするか、右クリックして確認します。」
+
+<VideoPlayer fileName="rebuild-edge-1"/>
+
+## 関連項目
+- [Rebuild](rebuild)
+- [Raise Surface Degree](raise-surface-degree)

@@ -1,0 +1,25 @@
+import VideoPlayer from '/components/VideoPlayer';
+import Reference from '/components/Reference'
+import Kst from '/components/KeyboardShortcutsTitle'
+import ButtonIcon from '/components/ButtonIcon'
+
+# Rebuild Edge
+
+<Reference shortcut="" command="Rebuild" button="-"/>
+
+Rebuild broken edge fragments into one clean edge.
+
+## Grundlegende Verwendung
+
+1. Wählen Sie eine Kante aus, die Sie neu erstellen möchten.
+2. Verwenden Sie den Befehl **Rebuild** im Befehlsbereich.
+3. Stellen Sie die Optionen im Befehlsdialog ein.
+    - <Kst>Command Dialog</Kst>
+          - **Tolerance:** Bestimmen Sie die Toleranz der Kanten-CV-Anzahl. Ein niedrigerer Wert führt zu einer größeren Anzahl von CVs, während ein höherer Wert zu einer geringeren Anzahl von CVs führt. Dies wird die Qualität der Kante nach der Bestätigung beeinflussen.
+5. Bestätigen Sie mit OK im Befehlsdialog oder klicken Sie mit der rechten Maustaste.
+
+<VideoPlayer fileName="rebuild-edge-1"/>
+
+## Siehe auch
+- [Rebuild](rebuild)
+- [Raise Surface Degree](raise-surface-degree)
