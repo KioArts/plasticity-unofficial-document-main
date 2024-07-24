@@ -8,30 +8,41 @@ import ButtonIcon from '/components/ButtonIcon'
 
 <Reference shortcut="" command="xNURBS" buttonIcon="-"/>
 
-Create smooth and complex surfaces.
+XNurbs can be used to genereta quad sided and N-sided high-quality surfaces.
 
 ## Basic Usage
 
-1. Select two or more edges you want to frame the surface.
+1. Select your boundary edges you want to frame the surface.
 2. Use the **XNurbs** command in the Command Palette.
 3. Set the options in the Command Dialog.
     - <Kst>Command Dialog</Kst>
           - **Continuity:** **G0, G1, G2**
-          - **Quad sided:** Generate untrimmed quad-sided spline surface on a surface area with 4 edges. This only works with 4 boundary edges on a surface area.
-          - **Flatness:** Specify the value of flatness on the generated surface. Higher value will result in higher surface quality and lower value will result it lower surface quality. This will affect on reflective lines if checked with the zebra shader. 
+          - **Quad sided:** Generate untrimmed quad-sided spline surface on a surface area with quad edges. This only works with 4 boundary edges on a surface area.
+          - **Flatness:** This option affects the flatness and quality of generated surfaces. Specifying higher value will generate high quality surfaces and lower value will generate low quality surfaces.
           - **Boundary:** 
-                - **Natural** - 
-                - **Normal** - 
+                - **Natural** 
+                - **Normal** 
           - **Quality:** - Determine the quality of the generated surface. 
-                - **Auto** - Automatic generation based on surface input.
-                - **High** - Higher surface quality which will increase surface additions.
-                - **Max** - Highest surface quality option, resulting in more surface additions.
-          - **Tolerance:** - Specify the tolerance for the generated surface.
+                - **Auto** - Automatic surface generation based on surface input quality.
+                - **High** - High surface quality which will increase surface spans.
+                - **Max** - Highest surface quality which will increase surface spans.
+          - **Tolerance:** - Specify the tolerance for the generated surface. It is recommmended to work default tolerance value for general surface workflows.
 5. Confirm with OK in the Command Dialog or right-click.
 
 <VideoPlayer fileName="xnurbs-0"/>
 
+<Callout type="info" emoji="💡">
+      **Tip**
+### Xnurbs with Profile Guides 
+      Unlike with the Loft and Patch Command, Xnurbs is capable of generating surfaces using open profile guides that dont intersect with boundary guides, this gives the flexability to generate surfaces with ease and the creative opportunity to explore surfaces.
 
+<VideoPlayer fileName="xnurbs-1"/>
+
+### Influence Guides
+      After establishing your boundary edges, you can select influence guides to build your form and surface.
+
+<VideoPlayer fileName="xnurbs-2"/>
+</Callout> 
 
 ## See also
 - [Rebuild](rebuild)
