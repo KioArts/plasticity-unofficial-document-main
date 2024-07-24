@@ -6,9 +6,9 @@ import { Callout } from 'nextra/components'
 
 # XNurbs
 
-<Reference shortcut="" command="xNURBS" button=""/>
+<Reference shortcut="" command="XNurbs" button=""/>
 
-XNurbs can be used to genereta quad sided and N-sided high-quality surfaces.
+XNurbs is a tool that can generate N-sided and quad-sided surfaces with high-quality output. It allows you to bridge gaps and close complex holes on a surface.
 
 ## Basic Usage
 
@@ -17,15 +17,15 @@ XNurbs can be used to genereta quad sided and N-sided high-quality surfaces.
 3. Set the options in the Command Dialog.
     - <Kst>Command Dialog</Kst>
           - **Continuity:** **G0, G1, G2**
-          - **Quad sided:** Generate untrimmed quad-sided spline surface on a surface area with quad edges. This only works with 4 boundary edges on a surface area.
+          - **Quad sided:** Generate untrimmed quad-sided spline surface on a surface area with quad edges.
           - **Flatness:** This option affects the flatness and quality of generated surfaces. Specifying higher value will generate high quality surfaces and lower value will generate low quality surfaces.
           - **Boundary:** 
-                - **Natural** 
-                - **Normal** 
+                - **Natural** No requirement for UV Flow.
+                - **Normal** Maintain UV isocurve mutually perpendicular. For quad-sided surface, this option will keep the isocurves of generated XNurbs surface normal to the boundary curves.
           - **Quality:** - Determine the quality of the generated surface. 
-                - **Auto** - Automatic surface generation based on surface input quality.
-                - **High** - High surface quality which will increase surface spans.
-                - **Max** - Highest surface quality which will increase surface spans.
+                - **Auto** - Automatic surface generation based on surface.
+                - **High** - High surface quality.
+                - **Max** - Highest surface quality.
           - **Tolerance:** - Specify the tolerance for the generated surface. It is recommmended to work default tolerance value for general surface workflows.
 5. Confirm with OK in the Command Dialog or right-click.
 
@@ -33,15 +33,19 @@ XNurbs can be used to genereta quad sided and N-sided high-quality surfaces.
 
 <Callout type="info" emoji="💡">
       **Tip**
-### Xnurbs with Profile Guides 
+### Quad sided
+      Quad sided option allows you to create an untrimmed quad-sided spline surface. This is particularly useful when constructing a surface with 4 boundary edges. This option only works with 4 boundary edges as this will create high-quality surface with correct spline orientation.
+<VideoPlayer fileName="xnurbs-2"/>
+### Flatness
+      Flatness determines the output quality of a surface by increasing and decreasing the input value in the Command Dialog. When using the **Quad sided** option on a quad-sided surface, the value of flatness needs to be between 0.95 - 1.00 for optimum results.
+<VideoPlayer fileName="xnurbs-3"/>
+### Quality
+      **Auto, High, and Max** options determine the quality of the generated surface. By default, it is on *Auto** but you can select either **High** or **Max** for better but complex surface result.
+<VideoPlayer fileName="xnurbs-4"/>
+### Profile Guides 
       Unlike with the Loft and Patch Command, Xnurbs is capable of generating surfaces using open profile guides that dont intersect with boundary guides, this gives the flexability to generate surfaces with ease and the creative opportunity to explore surfaces.
-
 <VideoPlayer fileName="xnurbs-1"/>
 
-### Influence Guides
-      After establishing your boundary edges, you can select influence guides to build your form and surface.
-
-<VideoPlayer fileName="xnurbs-2"/>
 </Callout> 
 
 ## See also
