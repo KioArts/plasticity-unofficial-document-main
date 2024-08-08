@@ -28,7 +28,7 @@ Das Export-Dialogfeld verfügt nun über eine verbesserte Funktionalität, bei d
 
 Einführung einer Funktion, die importierten Bild- und OBJ-Dateien automatisch basierend auf ihrem ursprünglichen Importdateinamen einen Namen zuweist. Das bedeutet, dass Plasticity beim Importieren einer Datei den vorhandenen Dateinamen als Standardname innerhalb der Anwendung verwendet.
 
-### New Orbit/Rotation 
+### Neuer Orbit/Rotation 
 
 Einführung einer neuen Orbit- und Rotationsstrategie unter Verwendung des klassischen Tumble/Turntable-Ansatzes.
 
@@ -38,23 +38,23 @@ Der Befehl Tangent Circle unterstützt jetzt das Konstruieren von Tangenten an d
 
 <VideoPlayer fileName="tangent-circle"/>
 
-### New shaders and Built-In Matcaps
+### Neue Shader und eingebaute Matcaps
 
 Neue Shader für Isophoten- und Neigungswinkelanalyse sowie neue eingebaute Matcaps für fortgeschrittene Oberflächen-Workflows hinzugefügt, einschließlich der Option, benutzerdefinierte Matcaps einzufügen. Weitere Informationen finden Sie [hier](/plasticity-essential/view-mode).
 
 ![Matcaps and Shaders](/img/custom-matcaps-example-de.png)
 
-### New Faceting Preference - "Ultra"
+### Neue Facettierungspräferenz – „Ultra“
 
 Eine neue Facettierungspräferenz "Ultra" wurde eingeführt, um die Oberflächenglätte in Oberflächen-Workflows zu verbessern. Sie wird für Oberflächen-Workflows und die Arbeit an kleinen Dokumenten, zum Beispiel einer Karosserie, empfohlen. Diese Einstellung wird auch für leistungsstarke Computer empfohlen.
 
-### Command Palette
+### Befehlspalette
 
 Die Befehlspalette hebt nun überschneidende Tastenkombinationen in Rot hervor. Diese Funktion erleichtert das Erkennen und Beheben von Konflikten und sorgt für einen reibungsloseren Arbeitsablauf sowie eine verbesserte Benutzerfreundlichkeit.
 
 ![Keybind conflict highlighter](/img/keybind-conflict-highlight.png)
 
-### Diagnostic Error Bodies in Loft and Sweep Commands
+### Diagnoseschaltflächen in den Befehlen Loft und Sweep
 
 Diagnoseschaltflächen werden jetzt in den Befehlen Loft und Sweep angezeigt, um Probleme wie Selbstüberschneidungen zu identifizieren.
 
@@ -74,7 +74,6 @@ Der Untrim-Befehl wurde verbessert, sodass nun Löcher erstellt werden können, 
 
 ### Extend Curve
 
-
 Der Befehl Extend Curve wurde erweitert, um neben Punkten auch Kurven zu akzeptieren und diese in zwei Richtungen gleichzeitig zu verlängern. Weitere Informationen zum Befehl Extend Curve finden Sie [hier](/sketch/extend-curve).
 
 <VideoPlayer fileName="extend-curve-example"/>
@@ -91,21 +90,19 @@ Ein neues Verhalten für den Befehl Extend Sheet wurde eingeführt, bei dem ein 
 
 <VideoPlayer fileName="extend-sheet-dependant-offset"/> 
 
-### Point Picking Enhancement 
+### Verbesserung der Punktwahl 
 
 Beim Drücken von <kbd>Shift+X</kbd> können Sie jetzt vorübergehend unerwünschte Snaps beim Punktwählen an einer Kurve, Kante oder Fläche deaktivieren. Dies ermöglicht es Ihnen, gezielt auf bestimmte Punkte zu snappen, ohne Ihren Arbeitsfluss zu verlangsamen.
 
 <VideoPlayer fileName="point-picking-enhancement-example"/>
 
-### Snapping Features 
-
+### Snap-Funktionen
 
 Neue Kanten-Snaps „nächster Punkt“, „senkrecht“ und „tangential“ eingeführt, die mehr Kontrolle und Präzision beim Arbeiten mit Kanten ermöglichen. Weitere Informationen zu den Raster-Snap-Funktionen finden Sie [hier](/plasticity-essential/grid-and-snap).
 
 <VideoPlayer fileName="snapping-features-example"/>
 
 ![Edge snapping example](/img/new-edge-snapping-de.png)
-
 
 Zusätzlich wurden neue Hover-Snaps eingeführt, bei denen Kurven und Kanten an den Schnittpunkten oder Durchdringungen der Konstruktionsebene und Achsen erkannt werden. Weitere Informationen zu Konstruktionsebenen finden Sie [hier](/plasticity-essential/construction-plane).
 
@@ -160,25 +157,25 @@ Der STEP-Export-Dialog wurde erweitert, um Optionen zum Konvertieren von analyti
 
  ![Warning indicator](/img/warning-indicator.png)
  
-### Simplified Pipe Gizmo
+### Vereinfachtes Pipe-Gizmo
 
  Der Gizmo für den Pipe-Befehl wurde vereinfacht, wodurch er jetzt leichter zu verwenden und zu bedienen ist. Siehe das folgende Beispiel.  
 
  ![Pipe Gizmo](/img/pipe-gizmo-example.png)
 
-### New OBJ Export Option: "Inflexion"
+### Neue OBJ-Exportoption: „Inflexion“
 
 Die Option „Inflexion“ fügt zusätzliche Linien-Schnitte auf Oberflächenbereichen ein, insbesondere an Krümmungen. Dies erhöht die Topologieauflösung für eine höhere Renderqualität beim Export in andere 3D-Pakete. Sie haben jedoch jetzt die Möglichkeit, diese Option zu deaktivieren, um eine gleichmäßigere Verteilung der Topologie insgesamt zu ermöglichen.
 
 ![Inflexion OBJ Option](/img/obj-export-example-1.png)
 
-### OBJ Export Feature: Matcap and Wireframe Options
+### OBJ-Export-Funktion: Matcap- und Drahtgitter-Optionen
 
 Der OBJ-Export kann jetzt optional das aktuelle Matcap verwenden und das Drahtgitter während der Inspektion deaktivieren. Diese Funktion ist nützlich, um die Oberflächenqualität oder -optimierung mit hochauflösenden Zebra- oder anderen Shadern zu überprüfen.
 
  <VideoPlayer fileName="obj-export-example-2"/>
 
-### Dimension Command Enhancement
+### Erweiterung des Dimension-Befehls
 
 Das Ändern der Größe von Zylindern mit dem Dimension-Befehl ist jetzt möglich. Weitere Informationen zum Dimension-Befehl finden Sie [hier](/common/dimension).
 
@@ -192,63 +189,63 @@ Der Rebuild-Befehl wurde erweitert, um nun auch beschädigte Kanten auf einer Fl
 
 
 
-## Major Improvement
+## Wesentliche Verbesserung
 
 ### Dependent Offset 
 
-Introducing new behaviour for Offset Face (push/pull) command which now supports dependent offsets, allowing you to match and intersect a body. Refer to [here](/solid/offset-face).
+Ein neues Verhalten des Befehls „Offset Face“ (Schieben/Zeiehen) wird eingeführt, das jetzt abhängige Versätze unterstützt und es Ihnen ermöglicht, einen Körper anzupassen und zu schneiden. Weitere Informationen finden Sie [hier](/solid/offset-face).
 
 <VideoPlayer fileName="dependant-offset-face"/>
 
-### Surface CV Editing
+### Flächen-CV-Bearbeitung
 
-Surface CV editing now allows direct manipulation of both trimmed and untrimmed faces.
+Die Bearbeitung von Flächen-CVs ermöglicht jetzt die direkte Manipulation sowohl von zugeschnittenen als auch von unbeschnittenen Flächen.
 
 <VideoPlayer fileName="direct-manipulation-cv"/>
 
 ### Raise Surface Degree
 
-Raise Degree Command increases surface complexity by converting analytic surfaces to spline and increasing the spline degree. Refer to [here](/solid/raise-surface-degree).
+Der Befehl „Raise Degree“ erhöht die Komplexität von Flächen, indem analytische Flächen in Splines umgewandelt und der Spline-Grad erhöht wird. Weitere Informationen finden Sie [hier](/solid/raise-surface-degree).
 
 <VideoPlayer fileName="raise-surface-degree"/>
 
 ### Nominal Face
 
-Faces with visible CVs now have a nominal surface to allow easier edits in the presence of direct editing. Remove Nominal Surface Command is available in case it needs to be removed. Refer to [here](/solid/remove-nominal-surface).
+Flächen mit sichtbaren CVs haben jetzt eine nominale Fläche, die einfachere Bearbeitungen bei direkter Bearbeitung ermöglicht. Der Befehl „Nominale Fläche entfernen“ steht zur Verfügung, falls die nominale Fläche entfernt werden muss. Weitere Informationen finden Sie [hier](/solid/remove-nominal-surface).
 
 <VideoPlayer fileName="remove-nominal-surface"/>
 
 ### Toggle Points
 
-Introduced Toggle Points command to show/hide points on faces, curves, and bodies. Refer to [here](/curve/toggle-points).
+Der Befehl „Toggle Points“ wurde eingeführt, um Punkte auf Flächen, Kurven und Körpern ein- oder auszublenden. Weitere Informationen finden Sie [hier](/curve/toggle-points).
 
 <VideoPlayer fileName="toggle-points"/> 
 
 ### Pipe and Sweep
 
-Added scaling options to the Pipe and Sweep commands. Refer to [Pipe](/solid/pipe) and [Sweep](/solid/sweeop) for more details.
+Skalierungsoptionen wurden zu den Befehlen Pipe und Sweep hinzugefügt. Weitere Details finden Sie unter [Pipe](/solid/pipe) und [Sweep](/solid/sweeop).
 
 ### Full Round Fillet
 
-The Full Round option has been added to the solid fillet feature. This option gives you the option to create a rounded fillet on a face when two edges are selected. For more details on Fillet Shell, see [here](/solid/fillet-shell#fillet-options).
+Die Option „Full Round“ wurde zur Festkörper-Fasenfunktion hinzugefügt. Diese Option ermöglicht es, eine abgerundete Fase auf einer Fläche zu erstellen, wenn zwei Kanten ausgewählt sind. Weitere Details zur Fillet Shell finden Sie [hier](/solid/fillet-shell#fillet-options).
 
 <VideoPlayer fileName="fillet-shell-shape"/>
 
 ### Rebuild Face
 
-Rebuild command now can rebuild the surfaces of faces, extend and shrink options allow for easily overbuilding surfaces. Refer to [here](/solid/rebuild-face). 
+Der Befehl „Rebuild“ kann jetzt die Flächen von Gesichtern wiederherstellen. Die Optionen „Erweitern“ und „Verkleinern“ ermöglichen ein einfaches Überbauen von Flächen. Weitere Informationen finden Sie [hier](/solid/rebuild-face). 
 
 <VideoPlayer fileName="rebuild-face"/>
 
-## Small but Significant Changes
+## Kleine, aber bedeutende Änderungen
 
-### CV Alignment with Screen Space
+### CV-Ausrichtung mit Bildschirmraum
 
-Dragging CVs of curves and surfaces now aligns with screen space rather than on construction plane. This will speed up your workflow and not get 
+Das Ziehen von CVs bei Kurven und Flächen richtet sich jetzt nach dem Bildschirmraum statt nach der Konstruktionsebene aus. Dies beschleunigt Ihren Arbeitsablauf und vermeidet Verwirrung durch ungenaue Ausrichtung.
 
-### Sketch Operations
+### Skizzieroperationen
 
-Enhanced sketch operations to confirm with a single **enter** press or single left-click. These affect the following sketch tools: 
+Die Skizzieroperationen wurden verbessert, sodass sie mit einem einzelnen Enter-Druck oder einem einzigen Linksklick bestätigt werden können. Dies betrifft die folgenden Skizzierwerkzeuge:
 
 |   **Circle Tools**  |  **Regular Polygon** |  **Rectangle Tools**   | 
 |---------------------|----------------------|------------------------|
@@ -260,58 +257,57 @@ Enhanced sketch operations to confirm with a single **enter** press or single le
 | [Three Point Arc](/tool/three-point-arc)  | -                       |  -                     | 
 | [Tangent Arc](/tool/tangent-arc)      | -                            |  -                     | 
 
-## Studio-Exclusive Features
+## Studio-exklusive Funktionen
 
 ### XNurbs
-
-Plasticity now features the XNurbs addon enabling the creation of high-quality surfaces. XNurbs is a powerful tool that enhances the ability to design smooth, complex surfaces with precision that greatly improves the overall design process. XNurbs is only available on PC and Mac. For more information on XNurbs click [here](/solid/xnurbs).
+Plasticity bietet jetzt das XNurbs-Addon, das die Erstellung von hochwertigen Oberflächen ermöglicht. XNurbs ist ein leistungsstarkes Werkzeug, das die Fähigkeit zur präzisen Gestaltung glatter, komplexer Oberflächen verbessert und den gesamten Designprozess erheblich optimiert. XNurbs ist nur für PC und Mac verfügbar. Weitere Informationen zu XNurbs finden Sie [hier](/solid/xnurbs).
 
 <VideoPlayer fileName="xnurbs-example"/> 
 
 ### Rhino 8 Import
 
-Added support for Rhino 8 imports.
+Unterstützung für den Import von Rhino 8 wurde hinzugefügt.
 
-## Noteworthy Optimizations
+## Bemerkenswerte Optimierungen
 
-Enhanced parallelism in OBJ/STL exports.
+Der Parallelismus bei OBJ/STL-Ex- und -Importen wurde verbessert.
 
-Object transformations (move/rotate/scale) now bypass refaceting on confirmation for efficiency.
+Objekttransformationen (Verschieben/Rotieren/Skalieren) umgehen nun die Neuberechnung der Facettierung bei der Bestätigung zur Steigerung der Effizienz.
 
-Implemented 16-bit snorm normals and 16-bit indices where possible to optimize memory usage.
+Implementierung von 16-Bit-Snorm-Normalen und 16-Bit-Indizes, wo möglich, zur Optimierung der Speichernutzung.
 
 
-## New Commands 
+## Neue Befehle
 
 ### Remove Nominal Surface
 
-Remove hiden surface CVs for more control. Only applicable when you've raised surface degree. Refer to [here](/solid/remove-nominal-surface)
+Entfernen Sie versteckte Flächen-CVs für mehr Kontrolle. Dies ist nur anwendbar, wenn Sie den Flächen-Grad erhöht haben. Weitere Informationen finden Sie [hier](/solid/remove-nominal-surface)
 
 ### Toggle Points
 
-Introduced Toggle Points command to show/hide points on faces, curves, and bodies. Refer to [here](/curve/toggle-points).
+Der Befehl „Toggle Points“ wurde eingeführt, um Punkte auf Flächen, Kurven und Körpern ein- oder auszublenden. Weitere Informationen finden Sie [hier](/curve/toggle-points).
 
 ### Raise Surface Degree
 
-Raise Degree Command increases surface complexity by converting analytic surfaces to spline and increasing the spline degree. Refer to [here](/solid/raise-surface-degree).
+Der Befehl „Raise Degree“ erhöht die Komplexität von Flächen, indem analytische Flächen in Splines umgewandelt und der Spline-Grad erhöht wird. Weitere Informationen finden Sie [hier](/solid/raise-surface-degree).
 
 ### Rebuild Face
 
-Rebuild command now can rebuild the surfaces of faces, extend and shrink options allow for easily overbuilding surfaces. Refer to [here](/solid/rebuild-face).
+Der Befehl „Rebuild“ kann jetzt die Flächen von Gesichtern wiederherstellen. Die Optionen „Erweitern“ und „Verkleinern“ ermöglichen ein einfaches Überbauen von Flächen. Weitere Informationen finden Sie [hier](/solid/rebuild-face).
 
 ### Rebuild Edge
 
-The Rebuild Command has expanded to now rebuild broken edges on a surface.
+Der Befehl „Rebuild“ wurde erweitert und kann jetzt beschädigte Kanten auf einer Fläche wiederherstellen.
 
 ### Extend Sheet
 
-Extend Sheet Command which will extend a sheet up to and intersecting a target body. For more information on Extend Sheet, click [here](/solid/extend-sheet#dependant-offset).
+Der Befehl „Extend Sheet“ verlängert eine Fläche bis zu einem Zielkörper und schneidet diesen. Weitere Informationen zum Befehl „Extend Sheet“ finden Sie [hier](/solid/extend-sheet#dependant-offset).
 
 ### XNurbs
 
-Create smooth and high-quality quad-sided and N-sided surfaces. For more information on XNurbs, click [here](/solid/xnurbs).
+Erstellen Sie glatte und hochwertige viereckige und N-seitige Flächen. Weitere Informationen zu XNurbs finden Sie [hier](/solid/xnurbs).
 
 
-## Download and Installation
+## Download und Installation
 
-Plasticity 2024.1 is now available for download. Please refer to [this link](/getting-started/download-and-install) for more details.
+Plasticity 2024.1 steht jetzt zum Download bereit. Weitere Informationen finden Sie unter [diesem Link](/getting-started/download-and-install).
